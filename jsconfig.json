@@ -1,11 +1,10 @@
 {
   "compilerOptions": {
-    "target": "es2017",
-    "allowSyntheticDefaultImports": false,
     "baseUrl": "./",
     "paths": {
+      "*": ["./node_modules/tns-core-modules/*", "./node_modules/*"],
       "~/*": ["app/*"]
     }
   },
-  "exclude": ["node_modules", "platforms", "hooks"]
+  "include": ["app/**/*"]
 }
